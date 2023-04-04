@@ -13,7 +13,7 @@ job('NodeJS Docker example') {
     steps {
         dockerBuildAndPublish {
             repositoryName('bengoren/bendockerhub_repo')
-            tag('nodejs_ben')
+            tag('nodejs-dsl-docker')
             registryCredentials('DockerHub')
             buildContext('./basics/')
             forcePull(false)
